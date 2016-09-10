@@ -17,16 +17,20 @@
     <input v-model='newTodo' type="text" v-on:keyup.enter="addTodo">
     <br>
     filterArrayOne
-    <ul v-for="todo in filterArrayOne">
-        <span>{{todo.text}}</span>
-        <button v-on:click="removeTodo($index)">X</button>
+    <ul >
+        <li v-for="todo in filterArrayOne">
+            <span>{{todo.text}}</span>
+            <button v-on:click="removeTodo($index)">X</button>
+        </li>
     </ul>
     ******************************************
     <br>
     filterArrayTwo
-    <ul v-for="todo in filterArrayTwo">
-        <span>{{todo.text}}</span>
-        <button v-on:click="removeTodo($index)">X</button>
+    <ul >
+        <li v-for="todo in filterArrayTwo">
+            <span>{{todo.text}}</span>
+            <button v-on:click="removeTodo($index)">X</button>
+        </li>
     </ul>
 </div>
 <script>
